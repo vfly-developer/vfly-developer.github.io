@@ -1,0 +1,136 @@
+* {
+    text-decoration: none;
+}
+
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 0;
+}
+
+.left-side {
+    z-index: 1;
+    float: left;
+    width: 30%;
+    min-height: 100vh;
+    height: auto;
+}
+
+#logo {
+    position: relative;
+    top: 35px;
+    left: 35px;
+    font-family: "Droid Serif", serif;
+    font-size: 30px;
+    color: black;
+}
+
+#logo-nav:hover {
+    opacity: .7;
+}
+
+#logo-nav:visited {
+    color: inherit;
+}
+
+#logo-description {
+    position: relative;
+    top: 30px;
+    left: 35px;
+    font-size: 15px;
+    color: gray;
+}
+
+#main-divide {
+    position: relative;
+    margin-top: 50px;
+}
+
+.vert-nav {
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+}
+
+#current-showing {
+    color: gray;
+}
+
+#main-nav-li {
+    color: inherit;
+    display: block;
+    font-family: "Droid Serif", serif;
+    font-size: 14px;
+    width: 120px;
+    padding: 15px 30px;
+}
+
+#main-nav-li:hover {
+    color: gray;
+}
+
+.hor-nav {
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    margin-left: 50px;
+    padding: 0;
+}
+
+#img {
+    display: inline-flex;
+    padding: 15px 10px;
+}
+
+.right-side {
+    float: left;
+    width: 70%;
+    display: inline-flex;
+}
+
+.text-container {
+    position: relative;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    border: 3px solid black;
+}
+
+#header {
+    font: bold;
+    padding-left: 15px;
+    font-family: "Droid Serif", serif;
+}
+
+#info {
+    font-family: "Droid Serif", serif;
+    font-size: 14px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(99, 100, 100);
+}
+
+.image-container {
+    position: relative;
+    right: 0;
+    width: 50%;
+}
+
+#about-img {
+    display: block;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 260px;
+    height: 325px;
+}
