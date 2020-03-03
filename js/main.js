@@ -13,48 +13,6 @@ const responsive = {
     }
 }
 
-var formFields = {};
-
-document.addEventListener("DOMContentLoaded", function() {
-    formFields.firstName = document.getElementById('firstName');
-    formFields.lastName = document.getElementById('lastName');
-    formFields.email = document.getElementById('email');
-    formFields.subject = document.getElementById('subject');
-    formFields.message = document.getElementById('message');
-    formFields.isValid = false;
-
-    formFields.forEach(element => {
-        if (element.length === 0) {
-            isValid = false;
-            break;
-        }
-        isValid= true;
-    });
-
-    formFields.isValid = checkValidEmail(formFields.email);
-})
-
-function checkValidEmail(email) {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-        return true;
-    }
-    ret
-}
-
-class Query {
-    constructor(firstName, lastName, email, subject, message) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.subject = subject;
-        this.message = message;
-    }
-}
-
-function sendEmail() {
-    window.open(formFields.message);
-}
-
 $(document).ready(function () {
 
     $nav = $('.nav');
@@ -85,7 +43,15 @@ $(document).ready(function () {
         }, 1000);
     })
 
+    $button = $('.submit-button');
 
+    const data = {
+        name: "Sad",
+    };
+
+    $button.click(function() {
+        $.post('/api' , data)
+    });
 
     // AOS Instance
     AOS.init();
