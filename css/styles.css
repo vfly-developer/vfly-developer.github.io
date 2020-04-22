@@ -200,7 +200,7 @@ input {
 
 /* Viewport less then or equal to 750px */
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 800px){
     
     .blog-board {
         display: inline;
