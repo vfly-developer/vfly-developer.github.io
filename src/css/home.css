@@ -1,0 +1,44 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.welcoming {
+    overflow: hidden;
+}
+
+.body {
+    overflow: hidden;
+}
+
+.main-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+.unflipped {
+    margin-right: auto;
+    margin-left: 0;
+    width: 475px;
+}
+
+.flipped {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); 
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: auto;
+    width: 375px;
+}
+
+.centered {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.highlighted-bg {
+    background-color: black;
+}

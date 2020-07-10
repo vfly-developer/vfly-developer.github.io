@@ -1,0 +1,9 @@
+@media screen and (max-width:700px) {
+    .opacity-0 {
+        opacity: 1;
+    }
+
+    .hidden-test {
+        opacity: 0;
+    }
+}
